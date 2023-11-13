@@ -116,6 +116,4 @@ export GPG_TTY=$(tty)
 
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
 
-[ -s "/home/citadin/.scm_breeze/scm_breeze.sh" ] && source "/home/citadin/.scm_breeze/scm_breeze.sh"
-
 xset s off -dpms
