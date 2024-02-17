@@ -8,6 +8,7 @@ vim.opt.tabstop = 2           -- insert 2 spaces for a tab
 vim.opt.softtabstop = 2
 vim.opt.relativenumber = true -- relative line numbers
 vim.opt.wrap = true           -- wrap lines
+vim.opt.background = "dark"
 
 lvim.builtin.indentlines.options.char = ""
 lvim.builtin.bufferline.active = false
@@ -16,19 +17,20 @@ lvim.plugins = {
   { 'nyoom-engineering/oxocarbon.nvim' },
   { "catppuccin/nvim" },
   { "ribru17/bamboo.nvim" },
-  -- { "ellisonleao/gruvbox.nvim" },
+  { "ellisonleao/gruvbox.nvim" },
   { "savq/melange-nvim" },
-  { "AlexvZyl/nordic.nvim" }
+  { "AlexvZyl/nordic.nvim" },
+  { "ionide/Ionide-vim" }
 }
 
-lvim.colorscheme = "nordic"
+lvim.colorscheme = "gruvbox"
 vim.cmd("let &fcs='eob: '")
 
 lvim.autocommands = {
   {
     "BufEnter",
     {
-      pattern = { "*.cs", "*.py", "*.prisma" },
+      pattern = { "*.cs", "*.php", "*.py", "*.prisma", "*.fs" },
       command = "setlocal tabstop=4 softtabstop=4 shiftwidth=4",
     }
   }
