@@ -14,16 +14,34 @@ lvim.builtin.indentlines.options.char = ""
 lvim.builtin.bufferline.active = false
 
 lvim.plugins = {
-  { 'nyoom-engineering/oxocarbon.nvim' },
-  { "catppuccin/nvim" },
-  { "ribru17/bamboo.nvim" },
-  { "ellisonleao/gruvbox.nvim" },
-  { "savq/melange-nvim" },
-  { "AlexvZyl/nordic.nvim" },
+  -- Themes
+  -- { 'nyoom-engineering/oxocarbon.nvim' },
+  -- { "catppuccin/nvim" },
+  -- { "ribru17/bamboo.nvim" },
+  -- { "ellisonleao/gruvbox.nvim" },
+  -- { "savq/melange-nvim" },
+  -- { "AlexvZyl/nordic.nvim" },
+  -- { "nanotech/jellybeans.vim" },
+  -- { "jpo/vim-railscasts-theme" },
+  { "loctvl842/monokai-pro.nvim" },
+  { "ajmwagar/vim-deus" },
+  { "sts10/vim-pink-moon" },
+  { "mswift42/vim-themes" },
+  { "tlhr/anderson.vim" },
+  { "rayes0/blossom.vim" },
+  { "tinted-theming/base16-vim" },
+
+  -- F#
   { "ionide/Ionide-vim" }
 }
 
-lvim.colorscheme = "gruvbox"
+-- lvim.colorscheme = "gruvbox"
+-- lvim.colorscheme = "base16-darcula"
+-- lvim.colorscheme = "base16-tokyodark"
+-- lvim.colorscheme = "slate"
+-- lvim.colorscheme = "darktooth"
+lvim.colorscheme = "monokai-pro-default"
+
 vim.cmd("let &fcs='eob: '")
 
 lvim.autocommands = {
